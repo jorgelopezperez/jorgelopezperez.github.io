@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+        <meta charset="utf-8" />
+        <title>An example for syntax highlight with Markdown</title>
+        <link rel="stylesheet" href="https://jorgelopezperez.github.io/theme/css/wide.css" />
+        <link href="https://jorgelopezperez.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Personal Site Atom Feed" />
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="https://jorgelopezperez.github.io/">Personal Site <strong>Just another blog in the universe</strong></a></h1>
+                <nav><ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/articles/">Blog-I</a></li>
+                    <li><a href="/category/articles/">Blog-II</a></li>
+                    <li><a href="/about/">About</a></li>
+                    <li><a href="/contact/">Contact</a></li>
+                    <li><a href="https://jorgelopezperez.github.io/about/">About!</a></li>
+                    <li><a href="https://jorgelopezperez.github.io/about-me/">About me!</a></li>
+                    <li><a href="https://jorgelopezperez.github.io/overrides/">Overrides!</a></li>
+                    <li><a href="https://jorgelopezperez.github.io/hello/">Hello!</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="https://jorgelopezperez.github.io/syntax-highlight-markdown.html" rel="bookmark"
+           title="Permalink to An example for syntax highlight with Markdown">An example for syntax highlight with Markdown</a></h1>
+    </header>
+
+    <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2019-10-20T11:20:00+00:00">
+                Published: dg. 20 octubre 2019
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="https://jorgelopezperez.github.io/author/jorge.html">Jorge</a>
+        </address>
+<p>In <a href="https://jorgelopezperez.github.io/category/articles.html">articles</a>.</p>
+<p>tags: <a href="https://jorgelopezperez.github.io/tag/python.html">python</a> <a href="https://jorgelopezperez.github.io/tag/tutorial.html">tutorial</a> </p>
+</footer><!-- /.post-info -->      <h2>Syntax highlight in Pelican</h2>
+<p>There are two ways to specify the identifier:</p>
+<div class="highlight"><pre><span></span><code>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The triple-colon syntax will *not* show line numbers.&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+
+<p>To display line numbers, use a path-less shebang instead of colons:</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The path-less shebang syntax *will* show line numbers.&quot;</span><span class="p">)</span>
+</code></pre></div>
+</td></tr></table>
+
+<p>Syntax Highlight</p>
+<div class="highlight"><pre><span></span><code>    <span class="kn">import</span> <span class="nn">abc</span>
+</code></pre></div>
+
+
+<p><code class="stylecode">Take</code> a look about <code class="stylecode highlight">me</code>  and do not do anything    </p>
+<p>Adding an image to text</p>
+<p><img alt="my_image" src="/images/screenshot.png" title="Image Title on mouse-over"></p>
+<p>More highlight</p>
+<div class="highlight"><pre><span></span><code>    <span class="c1">#!/usr/bin/python3</span>
+
+    <span class="kn">from</span> <span class="nn">engine</span> <span class="kn">import</span> <span class="n">RunForrestRun</span>
+
+    <span class="sd">&quot;&quot;&quot;Test code for syntax highlighting!&quot;&quot;&quot;</span>
+
+    <span class="k">class</span> <span class="nc">Foo</span><span class="p">:</span>
+        <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">var</span><span class="p">):</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">var</span> <span class="o">=</span> <span class="n">var</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">run</span><span class="p">()</span>
+
+        <span class="k">def</span> <span class="nf">run</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+            <span class="n">RunForrestRun</span><span class="p">()</span>  <span class="c1"># run along!</span>
+</code></pre></div>
+    </div><!-- /.entry-content -->
+
+  </article>
+</section>
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>links</h2>
+                        <ul>
+                            <li><a href="http://getpelican.com/">Pelican</a></li>
+                            <li><a href="http://python.org/">Python.org</a></li>
+                            <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
+                            <li><a href="#">You can modify those links in your config file</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+                            <li><a href="https://jorgelopezperez.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+
+                            <li><a href="https://twitter.com/joloml">Twitter</a></li>
+                            <li><a href="https://github.com/jorgelopezperez">GitHub</a></li>
+                            <li><a href="https://www.linkedin.com/in/jorgelopezph/">Linkedin</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>
