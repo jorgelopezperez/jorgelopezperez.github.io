@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>pyadventures - articles</title><link href="https://jorgelopezperez.github.io/" rel="alternate"></link><link href="https://jorgelopezperez.github.io/feeds/articles.atom.xml" rel="self"></link><id>https://jorgelopezperez.github.io/</id><updated>2020-05-22T20:05:00+00:00</updated><subtitle>Just another blog in the universe</subtitle><entry><title>Python syntax lightening with RST</title><link href="https://jorgelopezperez.github.io/python-syntax-lightening-with-rst.html" rel="alternate"></link><published>2020-05-22T20:05:00+00:00</published><updated>2020-05-22T20:05:00+00:00</updated><author><name>Jorge López Pérez</name></author><id>tag:jorgelopezperez.github.io,2020-05-22:/python-syntax-lightening-with-rst.html</id><summary type="html">&lt;p class="first last"&gt;Another syntax with RST&lt;/p&gt;
+</summary><content type="html">&lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;1
+2
+3&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;#!/usr/bin
+ import functools
+ print(&amp;quot;hi&amp;quot;)
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</content><category term="articles"></category><category term="pelican"></category></entry><entry><title>An article about Pelican II</title><link href="https://jorgelopezperez.github.io/a-second-article-about-pelican.html" rel="alternate"></link><published>2020-05-21T08:30:00+00:00</published><updated>2020-05-21T08:30:00+00:00</updated><author><name>Jorge</name></author><id>tag:jorgelopezperez.github.io,2020-05-21:/a-second-article-about-pelican.html</id><summary type="html">&lt;p class="first last"&gt;A simple summary&lt;/p&gt;
+</summary><content type="html">&lt;p&gt;This is the text&lt;/p&gt;
+</content><category term="articles"></category><category term="pelican"></category></entry><entry><title>An article about Pelican I</title><link href="https://jorgelopezperez.github.io/an-article-about-pelican-i.html" rel="alternate"></link><published>2019-10-20T11:20:00+00:00</published><updated>2019-10-20T11:20:00+00:00</updated><author><name>Jorge</name></author><id>tag:jorgelopezperez.github.io,2019-10-20:/an-article-about-pelican-i.html</id><summary type="html">&lt;p&gt;A simple summary&lt;/p&gt;</summary><content type="html">&lt;h2&gt;Using Pelican to generate static files&lt;/h2&gt;
+&lt;p&gt;An article about Pelican under articles category and articles folder inside content&lt;/p&gt;
+&lt;p&gt;example of syntax highlight&lt;/p&gt;
+&lt;p&gt;HI &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;    &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;abc&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content><category term="articles"></category><category term="pelican"></category><category term="tutorial"></category></entry><entry><title>An example for syntax highlight with Markdown</title><link href="https://jorgelopezperez.github.io/syntax-highlight-markdown.html" rel="alternate"></link><published>2019-10-20T11:20:00+00:00</published><updated>2019-10-20T11:20:00+00:00</updated><author><name>Jorge</name></author><id>tag:jorgelopezperez.github.io,2019-10-20:/syntax-highlight-markdown.html</id><summary type="html">&lt;p&gt;Syntax highlight&lt;/p&gt;</summary><content type="html">&lt;h2&gt;Syntax highlight in Pelican&lt;/h2&gt;
+&lt;p&gt;There are two ways to specify the identifier:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;    &lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;The triple-colon syntax will *not* show line numbers.&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;To display line numbers, use a path-less shebang instead of colons:&lt;/p&gt;
+&lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;1&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;    &lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;The path-less shebang syntax *will* show line numbers.&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+
+&lt;p&gt;Syntax Highlight&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;    &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;abc&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;code class="stylecode"&gt;Take&lt;/code&gt; a look about &lt;code class="stylecode highlight"&gt;me&lt;/code&gt;  and do not do anything    &lt;/p&gt;
+&lt;p&gt;Adding an image to text&lt;/p&gt;
+&lt;p&gt;&lt;img alt="my_image" src="/images/screenshot.png" title="Image Title on mouse-over"&gt;&lt;/p&gt;
+&lt;p&gt;More highlight&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;    &lt;span class="c1"&gt;#!/usr/bin/python3&lt;/span&gt;
+
+    &lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;engine&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;RunForrestRun&lt;/span&gt;
+
+    &lt;span class="sd"&gt;&amp;quot;&amp;quot;&amp;quot;Test code for syntax highlighting!&amp;quot;&amp;quot;&amp;quot;&lt;/span&gt;
+
+    &lt;span class="k"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;Foo&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+        &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="fm"&gt;__init__&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;var&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+            &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;var&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;var&lt;/span&gt;
+            &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;run&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+
+        &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;run&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+            &lt;span class="n"&gt;RunForrestRun&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;  &lt;span class="c1"&gt;# run along!&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content><category term="articles"></category><category term="python"></category><category term="tutorial"></category></entry></feed>
