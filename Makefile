@@ -4,7 +4,8 @@ PELICANOPTS=
 
 BASEDIR=$(CURDIR)
 INPUTDIR=$(BASEDIR)/content
-OUTPUTDIR=$(BASEDIR)/output
+#OUTPUTDIR=$(BASEDIR)/output
+OUTPUTDIR=$(BASEDIR)/
 CONFFILE=$(BASEDIR)/pelicanconf.py
 PUBLISHCONF=$(BASEDIR)/publishconf.py
 
@@ -94,7 +95,7 @@ ftp_upload: publish
 	lftp ftp://$(FTP_USER)@$(FTP_HOST) -e "mirror -R $(OUTPUTDIR) $(FTP_TARGET_DIR) ; quit"
 
 github: publish
-	ghp-import -m "Generate Pelican site" -b $(GITHUB_PAGES_BRANCH) $(OUTPUTDIR)
+	ghp-import -m "Generate Pelican site" $(OUTPUTDIR) -r origin -b $(GITHUB_PAGES_BRANCH)
 	git push origin $(GITHUB_PAGES_BRANCH)
 
 .PHONY: html help clean regenerate serve serve-global devserver publish ssh_upload rsync_upload ftp_upload
