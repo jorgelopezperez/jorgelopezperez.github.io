@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = 'Jorge López Pérez'
 SITENAME = 'pyadventures'
-SITESUBTITLE = 'Just another blog in the universe'
+SITESUBTITLE = 'Just another blog about python, data, visualization'
 SITEURL = ''
 OUTPUT_PATH = '../output_src'
 DELETE_OUTPUT_DIRECTORY = True

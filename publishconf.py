@@ -29,6 +29,5 @@ DELETE_OUTPUT_DIRECTORY = False
 #GOOGLE_ANALYTICS = ""
 
 #THEME = 'simple'
-STATIC_PATHS = ['img', 'static', 'css']
-#FAVICON = 'img/favicon.ico'
-#CUSTOM_CSS = 'static/custom.css'
+STATIC_PATHS = ['css', 'img', 'static', 'extra/CNAME']
+EXTRA_PATH_METADATA = {'extra/CNAME': {'path': 'CNAME'},}
