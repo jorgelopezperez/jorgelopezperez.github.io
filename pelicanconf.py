@@ -27,7 +27,8 @@ LOAD_CONTENT_CACHE = False
 
 #PLUGIN_PATHS = ["plugins", "C:\Users\usuari\pelican-addons\pelican-plugins"]
 #PLUGINS = ["assets"]
-#PLUGIN_PATHS = ['pelican-plugins']
+PLUGIN_PATHS = ['plugins']
+PLUGINS = ['extract_toc']
 #PLUGINS = ['liquid_tags.img', 'liquid_tags.video',
 #           'liquid_tags.youtube', 'liquid_tags.vimeo',
 #           'liquid_tags.include_code', 'liquid_tags.notebook']
@@ -42,13 +43,15 @@ MARKDOWN = {
         'markdown.extensions.codehilite': {'css_class': 'highlight'},
         'markdown.extensions.extra': {},
         'markdown.extensions.meta': {},
+        'markdown.extensions.toc': {},
     },
     'output_format': 'html5',
 }
 
 #THEME = 'Flex'
 #THEME_STATIC_DIR = 'themes'
-THEME = 'themes/notmyidea'
+#THEME = 'themes/notmyidea'
+THEME = 'themes/elegant'
 STATIC_PATHS = [
     'images',
     'extra',  # this
