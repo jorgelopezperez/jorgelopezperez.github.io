@@ -3,9 +3,10 @@
 from __future__ import unicode_literals
 
 AUTHOR = 'Jorge López Pérez'
-SITENAME = 'Personal Site'
+SITENAME = 'pyadventures'
 SITESUBTITLE = 'Just another blog in the universe'
 SITEURL = ''
+OUTPUT_PATH = '../output_src'
 DELETE_OUTPUT_DIRECTORY = True
 PATH = 'content'
 
