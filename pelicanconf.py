@@ -56,8 +56,8 @@ STATIC_PATHS = [
 ]
 
 THEME_TEMPLATES_OVERRIDES = []
-#CSS_FILE = 'main.css'
-CSS_FILE = 'wide.css'
+CSS_FILE = 'main.css'
+#CSS_FILE = 'wide.css'
 #CUSTOM_CSS = 'css/custom.css'
 
 EXTRA_PATH_METADATA = {
