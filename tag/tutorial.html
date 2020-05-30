@@ -25,36 +25,7 @@
 
             <aside id="featured" class="body">
                 <article>
-                    <h1 class="entry-title"><a href="https://jorgelopezperez.github.io/an-article-about-pelican-i.html">An article about Pelican I</a></h1>
-<footer class="post-info">
-        <abbr class="published" title="2019-10-20T11:20:00+00:00">
-                Published: dg. 20 octubre 2019
-        </abbr>
-
-        <address class="vcard author">
-                By                         <a class="url fn" href="https://jorgelopezperez.github.io/author/jorge.html">Jorge</a>
-        </address>
-<p>In <a href="https://jorgelopezperez.github.io/category/articles.html">articles</a>.</p>
-<p>tags: <a href="https://jorgelopezperez.github.io/tag/pelican.html">pelican</a> <a href="https://jorgelopezperez.github.io/tag/tutorial.html">tutorial</a> </p>
-</footer><!-- /.post-info --><h2>Using Pelican to generate static files</h2>
-<p>An article about Pelican under articles category and articles folder inside content</p>
-<p>example of syntax highlight</p>
-<p>HI </p>
-<div class="highlight"><pre><span></span><code>    <span class="kn">import</span> <span class="nn">abc</span>
-</code></pre></div>                </article>
-            </aside><!-- /#featured -->
-                <section id="content" class="body">
-                    <h1>Other articles</h1>
-                    <hr />
-                    <ol id="posts-list" class="hfeed">
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="https://jorgelopezperez.github.io/syntax-highlight-markdown.html" rel="bookmark"
-                           title="Permalink to An example for syntax highlight with Markdown">An example for syntax highlight with Markdown</a></h1>
-                </header>
-
-                <div class="entry-content">
+                    <h1 class="entry-title"><a href="https://jorgelopezperez.github.io/syntax-highlight-markdown.html">An example for syntax highlight with Markdown</a></h1>
 <footer class="post-info">
         <abbr class="published" title="2019-10-20T11:20:00+00:00">
                 Published: dg. 20 octubre 2019
@@ -65,12 +36,41 @@
         </address>
 <p>In <a href="https://jorgelopezperez.github.io/category/articles.html">articles</a>.</p>
 <p>tags: <a href="https://jorgelopezperez.github.io/tag/python.html">python</a> <a href="https://jorgelopezperez.github.io/tag/tutorial.html">tutorial</a> </p>
-</footer><!-- /.post-info -->                <p>Syntax highlight</p>
-                <a class="readmore" href="https://jorgelopezperez.github.io/syntax-highlight-markdown.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
-                </ol><!-- /#posts-list -->
-                </section><!-- /#content -->
+</footer><!-- /.post-info --><h2>Syntax highlight in Pelican</h2>
+<p>There are two ways to specify the identifier:</p>
+<div class="highlight"><pre><span></span><code>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The triple-colon syntax will *not* show line numbers.&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+
+<p>To display line numbers, use a path-less shebang instead of colons:</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The path-less shebang syntax *will* show line numbers.&quot;</span><span class="p">)</span>
+</code></pre></div>
+</td></tr></table>
+
+<p>Syntax Highlight</p>
+<div class="highlight"><pre><span></span><code>    <span class="kn">import</span> <span class="nn">abc</span>
+</code></pre></div>
+
+
+<p><code class="stylecode">Take</code> a look about <code class="stylecode highlight">me</code>  and do not do anything    </p>
+<p>Adding an image to text</p>
+<p><img alt="my_image" src="/images/screenshot.png" title="Image Title on mouse-over"></p>
+<p>More highlight</p>
+<div class="highlight"><pre><span></span><code>    <span class="c1">#!/usr/bin/python3</span>
+
+    <span class="kn">from</span> <span class="nn">engine</span> <span class="kn">import</span> <span class="n">RunForrestRun</span>
+
+    <span class="sd">&quot;&quot;&quot;Test code for syntax highlighting!&quot;&quot;&quot;</span>
+
+    <span class="k">class</span> <span class="nc">Foo</span><span class="p">:</span>
+        <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">var</span><span class="p">):</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">var</span> <span class="o">=</span> <span class="n">var</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">run</span><span class="p">()</span>
+
+        <span class="k">def</span> <span class="nf">run</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+            <span class="n">RunForrestRun</span><span class="p">()</span>  <span class="c1"># run along!</span>
+</code></pre></div>                </article>
+            </aside><!-- /#featured -->
         <section id="extras" class="body">
                 <div class="blogroll">
                         <h2>links</h2>
