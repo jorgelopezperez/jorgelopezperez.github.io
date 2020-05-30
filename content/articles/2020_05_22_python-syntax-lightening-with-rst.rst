@@ -6,9 +6,6 @@ Python syntax lightening with RST
 :slug: python-syntax-lightening-with-rst
 :status draft
 :summary: Another syntax with RST
-
-
-
 .. code-block:: identifier
     :classprefix: pgcss
     :linenos: table
