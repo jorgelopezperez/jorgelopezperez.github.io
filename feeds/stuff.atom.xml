@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>pyadventures - Stuff</title><link href="https://jorgelopezperez.github.io/" rel="alternate"></link><link href="https://jorgelopezperez.github.io/feeds/stuff.atom.xml" rel="self"></link><id>https://jorgelopezperez.github.io/</id><updated>2020-05-21T08:30:00+00:00</updated><subtitle>Just another blog about python, Django, data, maps and visualization</subtitle><entry><title>This is me CAPULLO2!</title><link href="https://jorgelopezperez.github.io/me.html" rel="alternate"></link><published>2020-05-21T08:30:00+00:00</published><updated>2020-05-21T08:30:00+00:00</updated><author><name>Craig</name></author><id>tag:jorgelopezperez.github.io,2020-05-21:/me.html</id><summary type="html">&lt;p class="first last"&gt;This is&lt;/p&gt;
-</summary><content type="html"></content><category term="Stuff"></category><category term="Welcome"></category></entry><entry><title>This is 3!</title><link href="https://jorgelopezperez.github.io/me3.html" rel="alternate"></link><published>2020-05-21T08:30:00+00:00</published><updated>2020-05-21T08:30:00+00:00</updated><author><name>Craig</name></author><id>tag:jorgelopezperez.github.io,2020-05-21:/me3.html</id><summary type="html">&lt;p class="first last"&gt;This is&lt;/p&gt;
-</summary><content type="html">&lt;p&gt;THIS IS MEEEEEEEEEEEEEEEEEEEEEEEEEEEE.
-Say something capullito
-Puedes ver más detalles aquí !!!!!!!!&lt;/p&gt;
-</content><category term="Stuff"></category><category term="Welcome"></category></entry></feed>
