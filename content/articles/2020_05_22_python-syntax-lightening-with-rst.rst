@@ -4,7 +4,9 @@ Python syntax lightening with RST
 :date: 2020-5-22 20:05
 :tags: pelican
 :slug: python-syntax-lightening-with-rst
+:status draft
 :summary: Another syntax with RST
+
 
 
 .. code-block:: identifier
