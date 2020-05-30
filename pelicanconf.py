@@ -17,10 +17,10 @@ PAGE_SAVE_AS = '{slug}/index.html'
 
 MENUITEMS = (
   ('Home','/'),
-  ('Blog-I','/articles/'),
-  ('Blog-II','/category/articles/'),
+  #('Blog-I','/articles/'),
+  #('Blog-II','/category/articles/'),
   ('About','/about/'),
-  ('Contact','/contact/')
+  #('Contact','/contact/')
 )
 
 LOAD_CONTENT_CACHE = False
