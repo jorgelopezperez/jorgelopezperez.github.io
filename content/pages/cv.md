@@ -1,4 +1,4 @@
-Title: CV Mister Gold
+Title: CV
 Date: 2017-10-31 00:01
 Author: antonio
 Slug: my-cv
