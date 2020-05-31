@@ -20,7 +20,7 @@ MENUITEMS = (
   #('Blog-I','/articles/'),
   #('Blog-II','/category/articles/'),
   ('About','/about/'),
-  ('CV','/cv/mycv.html')
+  ('CV','/cv/my_cv.html')
 )
 
 LOAD_CONTENT_CACHE = False
