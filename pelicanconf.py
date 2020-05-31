@@ -20,7 +20,7 @@ MENUITEMS = (
   #('Blog-I','/articles/'),
   #('Blog-II','/category/articles/'),
   ('About','/about/'),
-  #('Contact','/contact/')
+  ('CV','/cv/mycv.html')
 )
 
 LOAD_CONTENT_CACHE = False
@@ -28,12 +28,12 @@ LOAD_CONTENT_CACHE = False
 #PLUGIN_PATHS = ["plugins", "C:\Users\usuari\pelican-addons\pelican-plugins"]
 #PLUGINS = ["assets"]
 PLUGIN_PATHS = ['plugins']
-PLUGINS = ['extract_toc']
+PLUGINS = ['extract_toc','jinja2content']
 #PLUGINS = ['liquid_tags.img', 'liquid_tags.video',
 #           'liquid_tags.youtube', 'liquid_tags.vimeo',
 #           'liquid_tags.include_code', 'liquid_tags.notebook']
 
-DISPLAY_CATEGORIES_ON_MENU = False
+DISPLAY_CATEGORIES_ON_MENU = True
 
 #THEME = 'pelican-bootstrap3'
 PYGMENTS_RST_OPTIONS = {'classprefix': 'pgcss', 'linenos': 'table'}
@@ -45,6 +45,7 @@ MARKDOWN = {
         'markdown.extensions.meta': {},
         'markdown.extensions.toc': {},
     },
+    'extensions': ['mdx_include'],
     'output_format': 'html5',
 }
 
@@ -102,4 +103,6 @@ DEFAULT_PAGINATION = 10
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
 
+
 GOOGLE_ANALYTICS = 'UA-167966224-1'
+TWITTER_USERNAME = "@jolom"

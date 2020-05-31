@@ -1,0 +1,11 @@
+Title: CV Mister Gold
+Date: 2017-10-31 00:01
+Author: antonio
+Slug: my-cv
+Summary: My CV
+Status: hidden
+Template: cv-template
+url: cv/mister-gold
+Save_as: cv/my_cv.html
+
+

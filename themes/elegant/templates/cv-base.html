@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8"> 
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        {% if page and page.author %}
+        <meta name="author" content="{{ page.author }}" />
+        <meta name="copyright" content="{{ page.author }}" />
+        {% else %}
+        <meta name="author" content="{{ AUTHOR }}" />
+        <meta name="copyright" content="{{ AUTHOR }}" />
+        {% endif %}
+        {% if page %}
+        <link rel="canonical" href="{{ SITEURL }}/{{ page.url }}" />
+        {% endif %}
+        {% from '_includes/_defaults.html' import SITE_DESCRIPTION with context %}
+        {% if SITE_DESCRIPTION %}
+        <meta name="description" content="{% block head_description %}{{ SITE_DESCRIPTION|e }}{% endblock head_description %}" />
+        {% endif %}
+        {% if GOOGLE_VERIFICATION %}
+        <meta name="google-site-verification" content="{{ GOOGLE_VERIFICATION }}" />
+        {% endif %}
+        {% if YANDEX_VERIFICATION %}
+        <meta name="yandex-verification" content="{{ YANDEX_VERIFICATION }}" />
+        {% endif %}
+
+        {% block meta_tags_in_head %}
+        {% from '_includes/_defaults.html' import GOOGLE_PLUS_PROFILE_URL with context %}
+        {% if GOOGLE_PLUS_PROFILE_URL %}
+        <link rel="author" href={{GOOGLE_PLUS_PROFILE_URL}} />
+        {% endif %}
+        {% from '_includes/_defaults.html' import TWITTER_USERNAME with context %}
+        {%if TWITTER_USERNAME %}
+        <meta name="twitter:creator" content="@{{TWITTER_USERNAME}}">
+        {% endif %}
+        <meta name="twitter:card" content="summary">
+        {% endblock meta_tags_in_head %}
+        
+        <title>{% block title %}{{ SITENAME|striptags|e }}{% endblock title %}</title>
+        {% block head_links %}
+        <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/cv.css" />
+        <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" media="none" onload="if(media!='all')media='all'">
+        <noscript>
+            <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css">
+        </noscript>
+        {% if 'assets' in PLUGINS %}
+        {% include '_includes/minify_css.html' with context %}
+        {% else %}
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/mister-gold-cdn@2.1.2/elegant.css" media="none" onload="if(media!='screen')media='screen'">
+        <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/custom.css" media="none" onload="if(media!='screen')media='screen'">
+        <noscript>
+            <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/mister-gold-cdn@2.1.2/elegant.css" media="screen">
+            <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/custom.css" media="screen">
+        </noscript>
+        {% endif %}
+        {% endblock head_links %}
+        {% include '_includes/favicon_links.html' %}
+        {% include '_includes/analytics.html' %}
+    </head>
+    <body>
+        <div id="content-sans-footer">
+        <div class="navbar navbar-static-top">
+            <div class="navbar-inner">
+                <div class="container-fluid">
+                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+                    <a class="brand" href="{{ SITEURL }}/"><span class=site-name>{{ SITENAME }}</span></a>
+                    <div class="nav-collapse collapse">
+                        <ul class="nav pull-right top-menu">
+                            <li><a href="#">Download My CV</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <div class="span1"></div>
+                <div class="span10">
+                    {% block content %}
+                    {% endblock content %}
+                </div>
+                <div class="span1"></div>
+            </div>
+        </div>
+        <div id="push"></div>
+    </div>
+        {% block script %}
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+        <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+        <script>
+            function validateForm(query)
+            {
+                return (query.length > 0);
+            }
+        </script>
+        {% endblock script %}
+    </body>
+</html>

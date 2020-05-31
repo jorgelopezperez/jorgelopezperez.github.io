@@ -1,0 +1,106 @@
+{% set IMG_CV = SITEURL %}
+{% set CV_DATA = {
+    'photo':    '/images/foto-jorge-normal-233x300.png',
+    'name':     'Jorge López Pérez',
+    'summary': 'I am a python programmer with a six-year experience in developing modules and applications, either standalone programs or under client-server architectures.
+My main expertise is in the area of Web and GIS, working for both European organisations and private companies',
+    'email':    'jorgelopez.physics@gmail.com',
+    'website':  'https://pyadventures.info',
+    'phone':    '606 98 70 84',
+    'linkedin': 'https://www.linkedin.com/in/jorgelopezph/',
+    'skype'   : '@jorgelopez.ph',
+    'github'  : 'https://github.com/jorgelopezperez'
+}
+%}
+
+{% if not CV_SKILLS %}
+{% set CV_SKILLS = [{
+    '00': 'Donec porttitor dictum tristique. Suspendisse vehicula, nibh vel consequat lacinia',
+    '01': 'lorem mauris egestas massa, et facilisis ipsum erat in magna',
+    '02': 'Morbi vestibulum ligula vel felis pulvinar, id auctor sapien rutrum',
+    '03': 'Etiam quis scelerisque metus, et imperdiet leo',
+    '04': 'Aenean condimentum quis massa et mattis',
+    '05': 'Donec sed vulputate erat, ac scelerisque nuncю Quisque aliquet condimentum ex, et lacinia massa porttitor nec'
+}]
+%}
+{% endif %}
+
+{% if not CV_WORK %}
+{% set CV_WORK = [{
+    'company': 'University Autonomous of Barcelona (UAB). Barcelona',
+    'position': 'Data application developer',
+    'description': 'As a Research support technician, I have been working in the data harmonization for the ESPON project (http:www.espon.eu), the definition of the updating strategy and the development of python applications to automatize the import and updating procedure, as well as imposing gap-filling techniques and error/outlier detection',
+    'from': '2017',
+    'till': '2020'
+},{
+    'company': 'Fincons Group. Milano (Italy)',
+    'position': 'Full-stack Django developer',
+    'description': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin leo sem, sagittis eu nisl et, feugiat interdum ex. Fusce tempus velit sit amet vehicula porta. Proin accumsan feugiat sagittis. Pellentesque laoreet auctor viverra. Sed feugiat metus quis ligula gravida rhoncus. Praesent in lectus venenatis, ullamcorper nunc vitae, venenatis diam. Vestibulum semper finibus sapien, vel convallis leo varius non.',
+    'from': '2015',
+    'till': '2017'
+},{
+    'company': 'Freelance. Barcelona',
+    'position': 'PHP programmer | GIS consultant',
+    'description': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin leo sem, sagittis eu nisl et, feugiat interdum ex. Fusce tempus velit sit amet vehicula porta. Proin accumsan feugiat sagittis. Pellentesque laoreet auctor viverra. Sed feugiat metus quis ligula gravida rhoncus. Praesent in lectus venenatis, ullamcorper nunc vitae, venenatis diam. Vestibulum semper finibus sapien, vel convallis leo varius non.',
+    'from': '2014',
+    'till': '2015'
+},{
+    'company': 'University Autonomous of Barcelona (UAB). Barcelona',
+    'position': 'GIS Web developer',
+    'description': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin leo sem, sagittis eu nisl et, feugiat interdum ex. Fusce tempus velit sit amet vehicula porta. Proin accumsan feugiat sagittis. Pellentesque laoreet auctor viverra. Sed feugiat metus quis ligula gravida rhoncus. Praesent in lectus venenatis, ullamcorper nunc vitae, venenatis diam. Vestibulum semper finibus sapien, vel convallis leo varius non.',
+    'from': '2012',
+    'till': '2014'
+},{
+    'company': 'Laboratorio de Estructura Electrónica de Materiales. ICMAB-CSIC. Bellaterra (Barcelona)',
+    'position': 'Researcher',
+    'description': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin leo sem, sagittis eu nisl et, feugiat interdum ex. Fusce tempus velit sit amet vehicula porta. Proin accumsan feugiat sagittis. Pellentesque laoreet auctor viverra. Sed feugiat metus quis ligula gravida rhoncus. Praesent in lectus venenatis, ullamcorper nunc vitae, venenatis diam. Vestibulum semper finibus sapien, vel convallis leo varius non.',
+    'from': '2006',
+    'till': '2010'
+}]
+%}
+{% endif %}
+
+{% if not CV_TESTIMONIALS %}
+{% set CV_TESTIMONIALS = [{
+    'name': 'Joe Doe',
+    'linked_company': 'Google',
+    'date': 'April 25, 2014',
+    'text': 'Etiam eget bibendum mauris. Ut pretium lorem ac ligula vestibulum porta. Proin dapibus aliquam dictum. In nec tellus enim. Morbi pharetra nisi tortor, sit amet pretium odio vulputate et. Cras ac nunc ipsum. Nunc ornare commodo luctus. Nunc nec eleifend neque. Integer eget neque faucibus, blandit velit eu, ultricies sapien. Fusce eget vestibulum ante, et imperdiet tortor. Sed in libero maximus, placerat lectus id, finibus massa. Sed egestas ligula a augue tincidunt cursus. Proin eleifend nec ante sed eleifend.'
+},{
+    'name': 'Steve Wozniak',
+    'linked_company': 'Apple',
+    'date': 'November 2016',
+    'text': 'Etiam eget bibendum mauris. Ut pretium lorem ac ligula vestibulum porta. Proin dapibus aliquam dictum. In nec tellus enim. Morbi pharetra nisi tortor, sit amet pretium odio vulputate et. Cras ac nunc ipsum. Nunc ornare commodo luctus. Nunc nec eleifend neque. Integer eget neque faucibus, blandit velit eu, ultricies sapien. Fusce eget vestibulum ante, et imperdiet tortor. Sed in libero maximus, placerat lectus id, finibus massa. Sed egestas ligula a augue tincidunt cursus. Proin eleifend nec ante sed eleifend.'
+}]
+%}
+{% endif %}
+
+{% if not CV_PORTFOLIO %}
+{% set CV_PORTFOLIO = [{
+    'item': 'item #1',
+    'description': 'Nam tempus elementum semper.',
+    'image': '<a href="#"><img src="http://via.placeholder.com/100x100"></a>'
+},{
+    'item': 'item #1',
+    'description': 'Nam tempus elementum semper.',
+    'image': '<a href="#"><img src="http://via.placeholder.com/100x100"></a>'
+},{
+    'item': 'item #1',
+    'description': 'Nam tempus elementum semper.',
+    'image': '<a href="#"><img src="http://via.placeholder.com/100x100"></a>'
+}]
+%}
+{% endif %}
+
+{% if not CV_EDUCATION %}
+{% set CV_EDUCATION = [{
+    'university': 'Harvard',
+    'faculty': '',
+    'major': '',
+    'qualification': '',
+    'degree': '',
+    'from': '2009',
+    'till': '2013'
+}]
+%}
+{% endif %}

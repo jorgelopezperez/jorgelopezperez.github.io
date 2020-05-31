@@ -1,0 +1,103 @@
+{% extends 'cv-base.html' %}
+
+{% block title %}
+{{ page.title|striptags|e }} {%if page.subtitle %} - {{ page.subtitle|striptags|e }} {% endif %} · {{ super() }}
+{% endblock title %}
+
+{% block head_description %}
+{% if page.summary %}
+{{ page.summary|striptags|e }}
+{% endif %}
+{% endblock head_description %}
+
+{% block meta_tags_in_head %}
+{{ super() }}
+{% if page.keywords %}
+<meta name="keywords" content="{{ page.keywords }}" />
+{% endif %}
+
+{% from '_includes/smo_metadata.html' import smo_metadata with context %}
+{{ smo_metadata(page) }}
+{% endblock meta_tags_in_head %}
+
+{% block content %}
+<div id="main">
+    {% from '_includes/cv.html' import CV_DATA with context %}
+        <div id="photo">
+            <img src="{{ CV_DATA.photo }}" alt="" />
+    </div>
+    <div class="header photo">
+        {% from '_includes/cv.html' import CV_DATA with context %}
+        <h1 id="title">{{ CV_DATA.name }}</h1><small>{{ CV_DATA.headline }}</small>
+        <ul class="r">
+            <li class="email">E-mail:</span> <span class="value">{{ CV_DATA.email }}</span></li>
+            <li class="website">Website:</span> <span class="value"><a href="{{ CV_DATA.website }}">{{ CV_DATA.website }}</a></span></li>                        
+            <li class="phone">Phone:</span> <span class="value">{{ CV_DATA.phone }}</span></li>
+            <li class="linkedin">Linkedin:</span> <span class="value"><a href="{{ CV_DATA.linkedin }}">Linkedin</a></span></li>
+	    <li class="linkedin">Skype:</span> <span class="value"><a href="{{ CV_DATA.skype }}">Skype</a></span></li>
+	    <li class="linkedin">Github:</span> <span class="value"><a href="{{ CV_DATA.github }}">Github</a></span></li>
+        </ul>
+    </div><div class="clear"> </div>
+    <div class="section section-1369309524934">
+    <div class="basic-info section">
+            <h2 class="title">Summary</h2>
+            <div class="set">{{ CV_DATA.summary }}
+                <div class="clear"> </div>
+            </div><!-- set //-->
+            <div class="clear"> </div>
+        </div><!-- basic-info //-->
+        <div class="clear"> </div>
+    </div>
+    <div class="section section-work">
+        <h2 class="title">Work experience</h2>
+        <div class="set">
+            {% from '_includes/cv.html' import CV_WORK with context %}
+            {% for workplace in CV_WORK %}
+            <div class="item">
+		    <h3><span class="job_title l">{{ workplace.position }}</span>
+        	            <span class="date r">{{ workplace.from }} - {{ workplace.till }}</span>
+	            </h3>
+                <div class="clear"> </div>
+                <span class="company">{{ workplace.company }}</span><div class="info">{{ workplace.description }}</div>
+                <div class="clear"> </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    <div class="section section-qualifications">
+        <h2 class="title">Skills</h2>
+        <div class="set">
+            <div class="item">
+                <span class="info">
+                    {% from '_includes/cv.html' import CV_SKILLS with context %}
+                    {% for skills in CV_SKILLS %}
+                    {% for num in skills %}
+                    <ul>
+                        <li>{{ skills[num] }}</li>
+                    </ul>
+                    {% endfor %}
+                    {% endfor %}
+                </span>
+            </div>
+        </div>
+    </div>
+    
+    <div class="section section-education">
+        <h2 class="title">Education</h2>
+        <div class="set">
+            <div class="item">
+                {% from '_includes/cv.html' import CV_EDUCATION with context %}
+                {% for schools in CV_EDUCATION %}
+                <h3><span class="course l">{{ schools.university }}</span>
+                    <span class="date r">{{ schools.from }} - {{ schools.till }}</span>
+                </h3>
+                <div class="clear"> </div>
+                {% endfor %}
+            </div>
+        </div>
+        <div class="clear"> </div>
+    </div>
+    
+</div>
+<div id="credit">Made by <a href="https://mister-gold.pro">Mister Gold</a></div>
+{% endblock content %}
