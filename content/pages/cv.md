@@ -4,7 +4,7 @@ Author: antonio
 Slug: my-cv
 Summary: My CV
 Template: cv-template
-url: cv/mister-gold
+url: cv/my_cv
 Save_as: cv/my_cv.html
 
 
