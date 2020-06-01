@@ -28,7 +28,7 @@ Syntax Highlight
        
 Adding an image to text
 
-![my_image](/images/screenshot.png "Image Title on mouse-over")
+![my_image](/static/images/screenshot.png "Image Title on mouse-over")
 
 
 More highlight

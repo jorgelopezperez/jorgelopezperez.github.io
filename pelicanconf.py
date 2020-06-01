@@ -53,11 +53,13 @@ MARKDOWN = {
 #THEME_STATIC_DIR = 'themes'
 #THEME = 'themes/notmyidea'
 THEME = 'themes/elegant'
-STATIC_PATHS = [
-    'images',
-    'extra',  # this
-    'css',
-]
+#STATIC_PATHS = [
+#    'images',
+#    'extra',  # this
+#    'css',
+#]
+
+STATIC_PATHS = ['static', 'extra'] 
 
 THEME_TEMPLATES_OVERRIDES = []
 CSS_FILE = 'main.css'
