@@ -28,7 +28,7 @@ LOAD_CONTENT_CACHE = False
 #PLUGIN_PATHS = ["plugins", "C:\Users\usuari\pelican-addons\pelican-plugins"]
 #PLUGINS = ["assets"]
 PLUGIN_PATHS = ['plugins']
-PLUGINS = ['extract_toc','jinja2content']
+PLUGINS = ['extract_toc','jinja2content', 'sitemap']
 #PLUGINS = ['liquid_tags.img', 'liquid_tags.video',
 #           'liquid_tags.youtube', 'liquid_tags.vimeo',
 #           'liquid_tags.include_code', 'liquid_tags.notebook']
@@ -104,6 +104,20 @@ DEFAULT_PAGINATION = 10
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
+
+SITEMAP = {
+    'format': 'xml',
+    'priorities': {
+        'articles': 0.5,
+        'indexes': 0.5,
+        'pages': 0.5
+    },
+    'changefreqs': {
+        'articles': 'monthly',
+        'indexes': 'daily',
+        'pages': 'monthly'
+    }
+}
 
 
 GOOGLE_ANALYTICS = 'UA-167966224-1'
