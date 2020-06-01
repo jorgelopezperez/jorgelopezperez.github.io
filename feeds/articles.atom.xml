@@ -29,7 +29,7 @@
 
 &lt;p&gt;&lt;code class="stylecode"&gt;Take&lt;/code&gt; a look about &lt;code class="stylecode highlight"&gt;me&lt;/code&gt;  and do not do anything    &lt;/p&gt;
 &lt;p&gt;Adding an image to text&lt;/p&gt;
-&lt;p&gt;&lt;img alt="my_image" src="/images/screenshot.png" title="Image Title on mouse-over"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="my_image" src="/static/images/screenshot.png" title="Image Title on mouse-over"&gt;&lt;/p&gt;
 &lt;p&gt;More highlight&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;    &lt;span class="c1"&gt;#!/usr/bin/python3&lt;/span&gt;
 
