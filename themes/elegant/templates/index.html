@@ -85,11 +85,32 @@
 
     {% if articles %}
     {% set css_class = 'span8 offset2' %}
+
+
     {% if articles and PROJECTS and LANDING_PAGE_TITLE %}
     {% set css_class = 'span12' %}
     {% endif %}
+
+    {% if articles and LOGO_JORGE_IMAGE_DESC %}
+    {% set css_class = 'span9' %}
+    {% endif %}
+
+
     {% from '_includes/_defaults.html' import RECENT_ARTICLES_COUNT, ARCHIVES_URL, CATEGORIES_URL with context %}
     <div class="row-fluid">
+	{% if LOGO_JORGE_IMAGE_DESC %}
+	    <div class="span3 logowrap">
+		    	<div class="logo">
+				<!--<img src="/static/images/foto-jorge-normal-233x300.png" alt="Jorge Lopez Perez">-->
+				<img src="/static/images/foto-jorge-normal-233x300.png" alt="Jorge Lopez Perez" width="175" height="175">
+				<div class="content-logo">
+					<h4>Jorge López</h4>
+					<p> Physicsts. Python developer working at UAB. Now blogger</p>
+					<p> I write about Python, Django, Data Science and GIS</p>
+				</div>
+			</div>
+                    </div>
+	{% endif %}
         <div class="{{ css_class }}">
             <header>
             <h1 id="recent-posts">Recent Posts <a id="allposts" href="{{ SITEURL }}/{{ ARCHIVES_URL }}">all posts</a></h1>

@@ -1,0 +1,40 @@
+.logo {
+
+}
+
+
+/*.logo img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9;
+    padding: 20px;
+
+}*/
+
+
+
+/*#######################*/	
+
+/*.logo{
+	padding:20px
+}*/
+
+.logo h2 {
+	all: None
+}
+
+.logo{
+	text-align:right
+}
+
+.logo img{
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.content-logo {
+     display: inline-block;
+}
+
+

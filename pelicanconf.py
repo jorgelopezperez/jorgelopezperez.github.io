@@ -10,6 +10,8 @@ OUTPUT_PATH = '../output_src'
 DELETE_OUTPUT_DIRECTORY = True
 PATH = 'content'
 
+LOGO_JORGE_IMAGE_DESC = True
+
 PAGE_URL = '{slug}/'
 PAGE_SAVE_AS = '{slug}/index.html'
 #ARTICLE_URL = 'posts/{date:%Y}/{date:%b}/{date:%d}/{slug}/'
@@ -20,7 +22,7 @@ MENUITEMS = (
   #('Blog-I','/articles/'),
   #('Blog-II','/category/articles/'),
   ('About','/about/'),
-  ('CV','/cv/my_cv.html')
+  #('CV','/cv/my_cv.html')
 )
 
 LOAD_CONTENT_CACHE = False
@@ -52,7 +54,9 @@ MARKDOWN = {
 #THEME = 'Flex'
 #THEME_STATIC_DIR = 'themes'
 #THEME = 'themes/notmyidea'
+#THEME = 'themes/jahon'
 THEME = 'themes/elegant'
+
 #STATIC_PATHS = [
 #    'images',
 #    'extra',  # this
@@ -68,7 +72,7 @@ CSS_FILE = 'main.css'
 
 EXTRA_PATH_METADATA = {
     #'css/custom.css': {'path': 'css/custom.css'},
-    'extra/robots.txt': {'path': 'robots.txt'},
+    #'extra/robots.txt': {'path': 'robots.txt'},
     'extra/favicon.ico': {'path': 'favicon.ico'},  # and this
     'extra/CNAME': {'path': 'CNAME'},
     'extra/LICENSE': {'path': 'LICENSE'},
