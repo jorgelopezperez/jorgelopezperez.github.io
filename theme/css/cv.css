@@ -7,7 +7,7 @@ p{margin:0 0 10px}
 ul{margin:0;padding:0 0 0 10px;list-style-type:square}
 a{color:#222}
 .clear{clear:both}
-#main{background:#fff;width:900px;padding:35px;margin:0 auto 15px;overflow:hidden;box-shadow:0 0 6px #ccc}
+#main{background:#fff;padding:35px;margin:0 auto 15px;overflow:hidden;box-shadow:0 0 6px #ccc}
 #title{line-height:25px;border-bottom:3px solid #000;padding-bottom:20px;margin:0 0 30px;font-weight:700}
 #credit{margin-bottom:20px;font-size:11px;color:#999;text-align:center}
 #credit a{color:#999}
@@ -16,6 +16,7 @@ p label span.colon{display:inline}
 .section{margin-bottom:20px}
 .item{margin:0 0 20px}
 .rtl{direction:rtl}
+.info{padding-top:10px}
 .photo .basic-info .set{float:none!important;width:auto!important}
 .basic-info .address{width:40%;float:left}
 .basic-info .r{float:right;width:58%;text-align:right}
