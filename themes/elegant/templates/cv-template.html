@@ -21,11 +21,11 @@
 {% endblock meta_tags_in_head %}
 
 {% block content %}
-<div id="main">
+<div id="main" class="">
     {% from '_includes/cv.html' import CV_DATA with context %}
         <div id="photo">
             <img src="{{ CV_DATA.photo }}" alt="" />
-    </div>
+	</div>
     <div class="header photo">
         {% from '_includes/cv.html' import CV_DATA with context %}
         <h1 id="title">{{ CV_DATA.name }}</h1><small>{{ CV_DATA.headline }}</small>
@@ -50,7 +50,7 @@
     </div>
     <div class="section section-work">
         <h2 class="title">Work experience</h2>
-        <div class="set">
+	<div class="set">
             {% from '_includes/cv.html' import CV_WORK with context %}
             {% for workplace in CV_WORK %}
             <div class="item">
@@ -62,7 +62,7 @@
                 <div class="clear"> </div>
             </div>
             {% endfor %}
-        </div>
+	    </div>
     </div>
     <div class="section section-qualifications">
         <h2 class="title">Skills</h2>
@@ -82,15 +82,17 @@
         </div>
     </div>
     
-    <div class="section section-education">
+    <div class="section section-work">
         <h2 class="title">Education</h2>
         <div class="set">
-            <div class="item">
                 {% from '_includes/cv.html' import CV_EDUCATION with context %}
                 {% for schools in CV_EDUCATION %}
-                <h3><span class="course l">{{ schools.university }}</span>
-                    <span class="date r">{{ schools.from }} - {{ schools.till }}</span>
+		 <div class="item">
+                <h3><span class="job_title l">{{ schools.university }}</span>
+                    <span class="date r"> {{ schools.till }}</span>
                 </h3>
+		<div class="clear"></div>
+		 <span class="company">{{ schools.degree }}</span>
                 <div class="clear"> </div>
                 {% endfor %}
             </div>
@@ -99,5 +101,4 @@
     </div>
     
 </div>
-<div id="credit">Made by <a href="https://mister-gold.pro">Mister Gold</a></div>
 {% endblock content %}

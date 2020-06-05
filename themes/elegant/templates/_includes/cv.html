@@ -15,12 +15,14 @@ My main expertise is in the area of Web and GIS, working for both European organ
 
 {% if not CV_SKILLS %}
 {% set CV_SKILLS = [{
-    '00': 'Donec porttitor dictum tristique. Suspendisse vehicula, nibh vel consequat lacinia',
-    '01': 'lorem mauris egestas massa, et facilisis ipsum erat in magna',
-    '02': 'Morbi vestibulum ligula vel felis pulvinar, id auctor sapien rutrum',
-    '03': 'Etiam quis scelerisque metus, et imperdiet leo',
-    '04': 'Aenean condimentum quis massa et mattis',
-    '05': 'Donec sed vulputate erat, ac scelerisque nuncю Quisque aliquet condimentum ex, et lacinia massa porttitor nec'
+    '00': 'BBDD: PostgreSQL/PostGIS, MySQK',
+    '01': 'Web (backend): Django (CMS, DRF, ORM), Nginx/Gunicorn',
+    '02': 'Web (frontend): Jquery, Bootstrap, OpenLayers, Leaflet, D3',
+    '03': 'Python packages: NumPy, Pandas, xlwings, xlrd, Matplotlib, Jupyter ecosystem, psycopg2, Jinja2, Celery, rasterio, GDAL, GeoPandas, Shapely/Fiona',
+    '04': 'GIS: QGIS (pyQGIS), ArcMap (ArcPy), MapServer, GeoServer, Geonetwork',
+    '05': 'CVS: git, github, JIRA',
+    '06': 'VM-Containeriz: VirtualBox, Docker (DockerFile, docker-compose',
+    '07': 'OS: Ubuntu, CentOS'
 }]
 %}
 {% endif %}
@@ -94,13 +96,29 @@ My main expertise is in the area of Web and GIS, working for both European organ
 
 {% if not CV_EDUCATION %}
 {% set CV_EDUCATION = [{
-    'university': 'Harvard',
+    'university': 'University Autonomous of Barcelona',
     'faculty': '',
     'major': '',
     'qualification': '',
-    'degree': '',
-    'from': '2009',
-    'till': '2013'
+    'degree': 'M.Sc. Geographical Information Systems',
+    'from': '',
+    'till': '2011'
+},{
+    'university': 'University Rovira i Virgili',
+    'faculty': '',
+    'major': '',
+    'qualification': 'M. Sc. Computational and Theoretical Chemistry',
+    'degree': 'M. Sc. Computational and Theoretical Chemistry',
+    'from': '',
+    'till': '2009'
+},{
+    'university': 'University of the Basque Country',
+    'faculty': '',
+    'major': '',
+    'qualification': 'Five-year degree in Physics',
+    'degree': 'Five-year degree in Physics',
+    'from': '',
+    'till': '2003'
 }]
 %}
 {% endif %}
