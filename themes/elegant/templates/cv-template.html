@@ -88,11 +88,11 @@
                 {% from '_includes/cv.html' import CV_EDUCATION with context %}
                 {% for schools in CV_EDUCATION %}
 		 <div class="item">
-                <h3><span class="job_title l">{{ schools.university }}</span>
+                <h3><span class="job_title l">{{ schools.degree }}</span>
                     <span class="date r"> {{ schools.till }}</span>
                 </h3>
 		<div class="clear"></div>
-		 <span class="company">{{ schools.degree }}</span>
+		 <span class="company">{{ schools.university }}</span>
                 <div class="clear"> </div>
                 {% endfor %}
             </div>
