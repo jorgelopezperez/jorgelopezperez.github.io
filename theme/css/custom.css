@@ -43,6 +43,7 @@
      /*display: inline-block;*/
 	display: block;
 	max-width. 175px;
+	min-width: 175px;
 }
 
 
