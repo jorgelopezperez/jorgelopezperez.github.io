@@ -19,22 +19,27 @@
 	padding:20px
 }*/
 
+@media only screen and (min-width:300px) and (max-width:750px){
+    .logo{display:none;}
+}	
+
 .logo h2 {
 	all: None
 }
 
 .logo{
-	text-align:right
+	text-align:left
 }
 
 .logo img{
   margin-left: auto;
   margin-right: auto;
-  display: block;
+  display: inline-block;
 }
 
 .content-logo {
-     display: inline-block;
+     /*display: inline-block;*/
+	display: block;
 }
 
 
